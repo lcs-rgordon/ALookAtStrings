@@ -6,83 +6,19 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		81ADE6B720275A2B0079BF4C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ADE6B620275A2B0079BF4C /* main.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		81ADE6B120275A2B0079BF4C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		81ADE6B320275A2B0079BF4C /* ALookAtStrings */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ALookAtStrings; sourceTree = BUILT_PRODUCTS_DIR; };
-		81ADE6B620275A2B0079BF4C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81ADE6BD20275A550079BF4C /* ALookAtStrings.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ALookAtStrings.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		81ADE6B020275A2B0079BF4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		81ADE6AA20275A2B0079BF4C = {
 			isa = PBXGroup;
 			children = (
-				81ADE6B520275A2B0079BF4C /* ALookAtStrings */,
-				81ADE6B420275A2B0079BF4C /* Products */,
+				81ADE6BD20275A550079BF4C /* ALookAtStrings.playground */,
 			);
-			sourceTree = "<group>";
-		};
-		81ADE6B420275A2B0079BF4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				81ADE6B320275A2B0079BF4C /* ALookAtStrings */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		81ADE6B520275A2B0079BF4C /* ALookAtStrings */ = {
-			isa = PBXGroup;
-			children = (
-				81ADE6B620275A2B0079BF4C /* main.swift */,
-			);
-			path = ALookAtStrings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		81ADE6B220275A2B0079BF4C /* ALookAtStrings */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 81ADE6BA20275A2B0079BF4C /* Build configuration list for PBXNativeTarget "ALookAtStrings" */;
-			buildPhases = (
-				81ADE6AF20275A2B0079BF4C /* Sources */,
-				81ADE6B020275A2B0079BF4C /* Frameworks */,
-				81ADE6B120275A2B0079BF4C /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ALookAtStrings;
-			productName = ALookAtStrings;
-			productReference = 81ADE6B320275A2B0079BF4C /* ALookAtStrings */;
-			productType = "com.apple.product-type.tool";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		81ADE6AB20275A2B0079BF4C /* Project object */ = {
@@ -91,12 +27,6 @@
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Russell Gordon";
-				TargetAttributes = {
-					81ADE6B220275A2B0079BF4C = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = 81ADE6AE20275A2B0079BF4C /* Build configuration list for PBXProject "ALookAtStrings" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -106,25 +36,13 @@
 				en,
 			);
 			mainGroup = 81ADE6AA20275A2B0079BF4C;
-			productRefGroup = 81ADE6B420275A2B0079BF4C /* Products */;
+			productRefGroup = 81ADE6AA20275A2B0079BF4C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81ADE6B220275A2B0079BF4C /* ALookAtStrings */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		81ADE6AF20275A2B0079BF4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81ADE6B720275A2B0079BF4C /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		81ADE6B820275A2B0079BF4C /* Debug */ = {
@@ -233,26 +151,6 @@
 			};
 			name = Release;
 		};
-		81ADE6BB20275A2B0079BF4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		81ADE6BC20275A2B0079BF4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2ZN2W2UQJ;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -261,15 +159,6 @@
 			buildConfigurations = (
 				81ADE6B820275A2B0079BF4C /* Debug */,
 				81ADE6B920275A2B0079BF4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		81ADE6BA20275A2B0079BF4C /* Build configuration list for PBXNativeTarget "ALookAtStrings" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				81ADE6BB20275A2B0079BF4C /* Debug */,
-				81ADE6BC20275A2B0079BF4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
