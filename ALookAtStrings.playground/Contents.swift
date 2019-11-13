@@ -2,9 +2,9 @@
  # A Look at Strings
  Here is the [official documentation from Apple](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html).
  
- In truth, because there are many languages and glyphs used in each language around the world, dealing with strings in code can be a Big Thing.
+ There are many languages worldwide. Swift fully supports the [Unicode standard](https://www.unicode.org/standard/standard.html), meaning strings may contain Latin characters, like *A*, or symbols from Mandarin Chinese, like *你好*, or even Emoji, such as: 🤦🏻‍♂️. These *glyphs* are represented using different amounts of internal storage in a computer. As a result, handling strings in Swift requires a bit more knowledge than in other programming languages that do not fully support the Unicode standard.
  
- However, below are some short examples that may prove useful.
+Below are some short examples that may prove useful.
  */
 
 import Foundation
