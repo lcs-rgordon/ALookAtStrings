@@ -14,6 +14,7 @@ let example = "The quick brown fox jumped over the lazy dog."
 
 // Iterate over each character in the string
 for singleCharacter in example {
+    singleCharacter
     // The output will show below in the Debug area
     print(singleCharacter)
 }
@@ -141,7 +142,10 @@ print("Second last character is: \(secondLast)")
  */
 // This will separate the output from the examples above from your work
 print("===== Exercise 1 begins =====")
-
+let studentName = "Ilana Mohamed"
+for character in studentName {
+    print(character)
+}
 
 
 /*:
@@ -158,7 +162,14 @@ print("===== Exercise 2 begins =====")
 // Create a string
 let aQuestion = "请问现在几点了?"
 
-// Write code to complete the exercise below...
+// Method 1 – From start of string
+let indexRelativeToStart = aQuestion.index(aQuestion.startIndex, offsetBy: 3)
+print(aQuestion[indexRelativeToStart])
+
+// Method 2 – From end of string
+let indexRelativeToEnd = aQuestion.index(aQuestion.endIndex, offsetBy: -5)
+print(aQuestion[indexRelativeToEnd])
+
 
 /*:
 ### Exercise 3
@@ -174,8 +185,34 @@ Say that you wish to encrypt the word `pen` using a *rightward shift of three ch
  HINT: Think about using Unicode scalar values, performing arithmetic, and then creating new characters.
 
 */
+print("===== Exercise 3 begins =====")
 
 // Create the starting phrase
-let plainText = "pen"
+let plainText = "CAB"
+
+// Create a variable to store the ciphertext
+var cipherText = ""
 
 // Encrypt the starting phrase
+for scalar in plainText.unicodeScalars {
+    
+    // Showing the plaintext characters and their scalar values
+    print("Plaintext scalar: \(scalar)")
+    print("Plaintext scalar value: \(scalar.value)")
+    
+    // Shift each scalar value by 3
+    let newScalarValue = scalar.value + 3
+    // Attempt to convert the scalar value to an actual scalar (character)
+    if let newScalar = UnicodeScalar(newScalarValue) {
+        print("Shifted scalar value \(newScalarValue)")
+        print("Ciphertext scalar: \(newScalar)")
+
+        // Actually add the ciphertext character to the output string
+        cipherText += String(newScalar)
+    }
+    
+    print("--- end of current iteration of loop that iterates over each character in the plaintext ---")
+
+}
+
+print("The encrypted text is \(cipherText)")
